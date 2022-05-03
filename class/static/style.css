@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial;
+    line-height: 1.7;
+    background-color: rgb(193, 229, 232);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.logo {
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.logo a {
+    color: rgb(17, 38, 4);
+}
+
+.menubar {  
+    font-size: 1.25rem;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.menubar li {
+    margin-right: 36px;
+}
+
+
+.menu a {
+    color: rgb(17, 38, 4);
+}
+
+.menu a :hover {
+    opacity: 0.7;
+}
+
+.menubar  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+
+
+.er {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    font-size: 0.5rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2.5rem;
+}
+
+.title {
+    color: rgb(17, 38, 4);
+}
+
+.foot {
+    color: rgb(17, 38, 4);
+}
+
+img {
+    margin-left: 30%;
+    margin-top: -30%;
+    width: 40%;
+    height: 40%;
+}
+
+
+
+span {
+    border-bottom: solid;
+    border-color: azure;
+}
+
+.important {
+    margin-left: 60px;
+}
+
+.rulemenu {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.last {
+    border-bottom: solid;
+    border-color: azure;
+}
+
+form {
+    margin: 7rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tino  {
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+
+button {
+    margin-top: 20px;
+}
+
+.class-list {
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.comment-list {
+    margin-left: 8%;
+}
+
+.comment {
+    margin-left: 50%;
+    margin-top: 5%;
+
+}
+
+button, input, select, textarea {
+    background-color: azure;
+    border-style: solid;
+}
+
+.cancel {
+    background-color: rgb(178, 231, 222);
+    border-style: solid;
+}
+
+
+.kokoa {
+    margin-top: 2%;
+    font-size: large;
+    border-left: solid
+}

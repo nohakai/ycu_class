@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>授業詳細</title>
+        <meta name="description" content="この授業取ろうかな？を解決">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="/static/style.css" >
+        <link rel="icon" type="image/png" href="/static/favicon.png">
+    </head>
+    <body>
+        <header class="page-header wrapper">    
+            <nav class="menupop">
+            <ul class="menubar idea">
+                <li class="menu"><a href="../">ひとつ前にもどる</a></li>
+            </ul>
+            </nav>
+            <body>
+                {% if user.id %}
+                <p>ログインしました</p>
+                {% endif %}
+            <div class="thread kokoa">
+                <tr class="kokoa"><td class="syaro">{{ thread_1_6.title }}</td></tr>
+            </div>
+        </header>
+        <main>
+            {% for comment in comments_1_6 %}
+            <div class="comment-list">
+                <div class="border-bottom">{{ comment.name }}_____{{ comment.year }}</div>
+                <div class='mt-2'>{{ comment.text | linebreaks | urlize }}</div>
+            </div>
+            {% empty %}
+            <p></p>
+            {% endfor %}
+        </main>
+        <section class="comment">
+            <a href='create/'>口コミを追加</a>
+        </section>
+        <footer class="er"> 
+            <h1 class="foot">@nohakai2001 django-python</h1>
+        </footer>
+    </body>
+</html>

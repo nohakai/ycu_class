@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>理学部３年-必修</title>
+        <meta name="description" content="この授業取ろうかな？を解決">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="/static/style.css" >
+        <link rel="icon" type="image/png" href="/static/favicon.png">
+    </head>
+    <body>
+        <header class="page-header wrapper">
+            <h1 class="logo"><a href="/">YCU-class</a></h1>     
+            <nav>
+            <ul class="menubar">
+                <li class="menu"><a href="/login/topic/">トップへ</a></li>
+                <li class="menu"><a href="/">ログアウト</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class=important>理学部-３年-必修</h1>
+            <ul>
+                <tbody>
+                    <div class="class-list">
+                        <h1>一覧</h1>
+                    {% for topic in topic_list_1_5 %}
+                  <div class='mt-2'><a href="{{ topic.id }}/">{{ topic | linebreaks | urlize }}</a></div>
+                    {% endfor %}
+                    </div>
+                </tbody>
+            </ul>
+        </main>
+        <footer class="er"> 
+            <h1 class="foot">@nohakai2001 django-python</h1>
+        </footer>
+    </body>
+</html>
